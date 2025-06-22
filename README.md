@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 😼 Spy Cat Agency – FrontEnd API
 
-## Getting Started
+A lightweight frontend built with Next.js and TailwindCSS, designed to manage spy cats for the Spy Cat Agency (SCA).
+This interface allows agents to add new spy cats, edit their salary, and view or delete cats via a clean, minimal UI.
 
-First, run the development server:
+🔗 Related Repository
+BackEnd (Python + FastAPI): [Spy Cat – BackEnd](https://github.com/ErickKS/python-spy-cat-agency)
+
+P.S.: Yes, I know the repo name is wrong — it was a rush and I can’t rename it for now 😅
+
+## 🚀 Features
+
+- [X] Add a new spy cat (name, experience, breed, salary)
+- [X] View all registered cats in a table
+- [X] Edit salary of a cat
+- [X] Delete a cat from the system
+- [X] Connected to FastAPI backend
+- [X] Minimal UI built with TailwindCSS + [Shadcn](https://ui.shadcn.com)
+- [X] Handles API errors with user-friendly messages
+
+## ⚙️ Project Setup
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the repo
+git clone https://github.com/ErickKS/nestjs-spy-cat-agency
+cd nestjs-spy-cat-agency
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+# Install dependencies
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Run the development server
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### After that, the app should be running at: http://localhost:3000
 
-## Learn More
+## ✅ Next Steps
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [ ] Improve mobile responsiveness
+- [ ] Create tests
+- [ ] Create a Dockerfile to containerize the app
