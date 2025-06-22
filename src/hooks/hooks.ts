@@ -15,7 +15,6 @@ export const useCats = () =>
     queryKey: ['cats'],
     queryFn: async () => {
       const res = await api.get('/cats')
-      console.log(res)
       return res.data.map(toSpyCat)
     },
   })
@@ -40,7 +39,7 @@ export const useUpdateSalary = () => {
   const qc = useQueryClient()
   return useMutation({
     mutationFn: async ({ id, salary }: { id: string; salary: number }) =>
-      api.patch(`/cats/${id}`, { salary }),
+      api.patch(`/cats/${id}/salary`, { salary }),
     onSuccess: () => qc.invalidateQueries({ queryKey: ['cats'] })
   })
 }
